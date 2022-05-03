@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EC909E432821855000E03040 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E422821855000E03040 /* main.swift */; };
+		EC909E4A282185B700E03040 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E49282185B700E03040 /* Game.swift */; };
+		EC909E4C2821860800E03040 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E4B2821860800E03040 /* Player.swift */; };
+		EC909E4E282186B200E03040 /* RandomGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E4D282186B200E03040 /* RandomGame.swift */; };
+		EC909E502821893400E03040 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E4F2821893400E03040 /* ScoreGame.swift */; };
+		EC909E5228218CFA00E03040 /* Int+by2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E5128218CFA00E03040 /* Int+by2.swift */; };
+		EC909E5428218E1500E03040 /* Int+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E5328218E1500E03040 /* Int+Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		EC909E3F2821855000E03040 /* MyCLIInter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCLIInter; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC909E422821855000E03040 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EC909E49282185B700E03040 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EC909E4B2821860800E03040 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC909E4D282186B200E03040 /* RandomGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGame.swift; sourceTree = "<group>"; };
+		EC909E4F2821893400E03040 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
+		EC909E5128218CFA00E03040 /* Int+by2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+by2.swift"; sourceTree = "<group>"; };
+		EC909E5328218E1500E03040 /* Int+Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Game.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				EC909E422821855000E03040 /* main.swift */,
+				EC909E49282185B700E03040 /* Game.swift */,
+				EC909E4B2821860800E03040 /* Player.swift */,
+				EC909E4D282186B200E03040 /* RandomGame.swift */,
+				EC909E4F2821893400E03040 /* ScoreGame.swift */,
+				EC909E5128218CFA00E03040 /* Int+by2.swift */,
+				EC909E5328218E1500E03040 /* Int+Game.swift */,
 			);
 			path = MyCLIInter;
 			sourceTree = "<group>";
@@ -121,6 +139,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC909E432821855000E03040 /* main.swift in Sources */,
+				EC909E5228218CFA00E03040 /* Int+by2.swift in Sources */,
+				EC909E4C2821860800E03040 /* Player.swift in Sources */,
+				EC909E4E282186B200E03040 /* RandomGame.swift in Sources */,
+				EC909E4A282185B700E03040 /* Game.swift in Sources */,
+				EC909E5428218E1500E03040 /* Int+Game.swift in Sources */,
+				EC909E502821893400E03040 /* ScoreGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
