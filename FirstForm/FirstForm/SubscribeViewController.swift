@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SubscribeViewController: UIViewController {
+class SubscribeViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -16,12 +16,23 @@ class SubscribeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Subscribe"
-
+        self.loginTextField.delegate = self
+        self.passwordTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
     @IBAction func handleSubscribe(_ sender: Any) {
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.loginTextField {
+            self.passwordTextField.becomeFirstResponder()
+        }
+        if textField == self.passwordTextField {
+            self.passwordTextField.resignFirstResponder() // Permet de fermer le clavier
+        }
+        return true
     }
     
     /*
