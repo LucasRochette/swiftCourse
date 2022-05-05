@@ -16,6 +16,11 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("subscribe.title", comment: "")
+        self.loginTextField.placeholder = NSLocalizedString("subscribe.form.login.placeholder", comment: "")
+        self.passwordTextField.placeholder = NSLocalizedString("subscribe.form.password.placeholder", comment: "")
+        self.subscribe_button.setTitle(NSLocalizedString("subscribe.form.subscribe.button", comment: ""), for : .normal)
+
+
         self.loginTextField.delegate = self
         self.passwordTextField.delegate = self
         // Do any additional setup after loading the view.
@@ -24,15 +29,15 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     @IBAction func handleSubscribe(_ sender: Any) {
         guard let login = self.loginTextField.text,
               let password = self.passwordTextField.text else {
-            self.displayErroMessage(title: "Invalid form", message: "Fields are mandatory")
+            self.displayErroMessage(title: NSLocalizedString("subscribe.form.alert.title", comment: ""), message: NSLocalizedString("subscribe.form.alert.invalid", comment: ""))
             return
         }
         guard login.count >= 4 else {
-            self.displayErroMessage(title: "Invalid form", message: "Login must contains at least 4 char")
+            self.displayErroMessage(title: NSLocalizedString("subscribe.form.alert.title", comment: ""), message: NSLocalizedString("subscribe.form.alert.invalid.login", comment: ""))
             return
         }
         guard password.count >= 6 else {
-            self.displayErroMessage(title: "Invalid form", message: "Password must contains at least 6 char")
+            self.displayErroMessage(title: NSLocalizedString("subscribe.form.alert.title", comment: ""), message: NSLocalizedString("subscribe.form.alert.invalid.password", comment: ""))
             return
         }
         print(login)

@@ -7,3 +7,12 @@
 */
 
 "subscribe.title" = "Inscription";
+"subscribe.form.alert.title" = "Formulaire invalide";
+"subscribe.form.alert.invalid.login" = "au moins 4 caractères";
+"subscribe.form.alert.invalid.password" = "au moins 6 caractères";
+"subscribe.form.alert.invalid" = "Les champs sont obligatoires";
+"subscribe.form.login.placeholder" = "Identifiant";
+"subscribe.form.password.placeholder" = "Mot de passe";
+"subscribe.form.subscribe.button" = "S'inscrire";
+
+

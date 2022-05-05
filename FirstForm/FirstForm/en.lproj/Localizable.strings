@@ -7,3 +7,10 @@
 */
 
 "subscribe.title" = "Subscribe";
+"subscribe.form.alert.title" = "Invalid form";
+"subscribe.form.alert.invalid.login" = "at least 4 char";
+"subscribe.form.alert.invalid.password" = "at least 6 char";
+"subscribe.form.alert.invalid" = "All fields are required";
+"subscribe.form.login.placeholder" = "Login";
+"subscribe.form.password.placeholder" = "Password";
+"subscribe.form.subscribe.button" = "Subscribe";
