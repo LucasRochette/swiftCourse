@@ -46,6 +46,7 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     
     func displayErroMessage(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Fermer", style: .cancel))
         self.present(alert,animated: true) {
             Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) {_ in alert.dismiss(animated: true)}
         }
