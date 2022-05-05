@@ -11,7 +11,7 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var subscribe_button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,12 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func handleSubscribe(_ sender: Any) {
+        guard let login = self.loginTextField.text,
+              let password = self.passwordTextField.text else {
+            return
+        }
+        print(login)
+        print(password)
         
     }
     
@@ -31,6 +37,7 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
         }
         if textField == self.passwordTextField {
             self.passwordTextField.resignFirstResponder() // Permet de fermer le clavier
+            self.handleSubscribe(self.subscribe_button!)
         }
         return true
     }

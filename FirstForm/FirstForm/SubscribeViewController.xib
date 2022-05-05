@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="loginTextField" destination="p3D-WR-Uwd" id="7qD-do-Vmk"/>
                 <outlet property="passwordTextField" destination="189-lP-lCq" id="PPq-In-zRQ"/>
+                <outlet property="subscribe_button" destination="TC5-jZ-kpz" id="mqX-Gl-7IB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,12 +25,12 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-WR-Uwd">
                     <rect key="frame" x="10" y="54" width="394" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="189-lP-lCq">
                     <rect key="frame" x="10" y="98" width="394" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC5-jZ-kpz">
                     <rect key="frame" x="154" y="142" width="106" height="31"/>
