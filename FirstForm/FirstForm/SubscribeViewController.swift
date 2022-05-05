@@ -27,7 +27,14 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
             self.displayErroMessage(title: "Invalid form", message: "Fields are mandatory")
             return
         }
-        self.displayErroMessage(title: "Invalid form", message: "Fields are mandatory")
+        guard login.count >= 4 else {
+            self.displayErroMessage(title: "Invalid form", message: "Login must contains at least 4 char")
+            return
+        }
+        guard password.count >= 6 else {
+            self.displayErroMessage(title: "Invalid form", message: "Password must contains at least 6 char")
+            return
+        }
         print(login)
         print(password)
         
