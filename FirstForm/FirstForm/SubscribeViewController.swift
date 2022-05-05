@@ -15,7 +15,7 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Subscribe"
+        self.title = NSLocalizedString("subscribe.title", comment: "")
         self.loginTextField.delegate = self
         self.passwordTextField.delegate = self
         // Do any additional setup after loading the view.
