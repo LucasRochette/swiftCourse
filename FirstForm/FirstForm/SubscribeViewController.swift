@@ -24,8 +24,10 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
     @IBAction func handleSubscribe(_ sender: Any) {
         guard let login = self.loginTextField.text,
               let password = self.passwordTextField.text else {
+            self.displayErroMessage(title: "Invalid form", message: "Fields are mandatory")
             return
         }
+        self.displayErroMessage(title: "Invalid form", message: "Fields are mandatory")
         print(login)
         print(password)
         
@@ -40,6 +42,13 @@ class SubscribeViewController: UIViewController, UITextFieldDelegate {
             self.handleSubscribe(self.subscribe_button!)
         }
         return true
+    }
+    
+    func displayErroMessage(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        self.present(alert,animated: true) {
+            Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) {_ in alert.dismiss(animated: true)}
+        }
     }
     
     /*
