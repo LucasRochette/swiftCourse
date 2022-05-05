@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC72ADDF2823DF6A00B87E26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC72ADE12823DF6A00B87E26 /* Localizable.strings */; };
 		EC909E62282190B600E03040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC909E61282190B600E03040 /* AppDelegate.swift */; };
 		EC909E6B282190BA00E03040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC909E6A282190BA00E03040 /* Assets.xcassets */; };
 		EC909E6E282190BA00E03040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC909E6C282190BA00E03040 /* LaunchScreen.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC72ADE02823DF6A00B87E26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC72ADE22823DFDB00B87E26 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC909E5E282190B600E03040 /* FirstForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC909E61282190B600E03040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC909E6A282190BA00E03040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 				EC909E6F282190BA00E03040 /* Info.plist */,
 				EC909E752821914600E03040 /* SubscribeViewController.swift */,
 				EC909E762821914600E03040 /* SubscribeViewController.xib */,
+				EC72ADE12823DF6A00B87E26 /* Localizable.strings */,
 			);
 			path = FirstForm;
 			sourceTree = "<group>";
@@ -106,6 +110,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = EC909E55282190B600E03040;
 			productRefGroup = EC909E5F282190B600E03040 /* Products */;
@@ -123,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC909E782821914600E03040 /* SubscribeViewController.xib in Resources */,
+				EC72ADDF2823DF6A00B87E26 /* Localizable.strings in Resources */,
 				EC909E6E282190BA00E03040 /* LaunchScreen.storyboard in Resources */,
 				EC909E6B282190BA00E03040 /* Assets.xcassets in Resources */,
 			);
@@ -143,6 +149,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EC72ADE12823DF6A00B87E26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC72ADE02823DF6A00B87E26 /* en */,
+				EC72ADE22823DFDB00B87E26 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EC909E6C282190BA00E03040 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -158,6 +173,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -218,6 +234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
