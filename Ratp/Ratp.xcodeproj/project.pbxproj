@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08E9B0228909A36003EA81B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0128909A36003EA81B /* User.swift */; };
+		A08E9B0528909DB0003EA81B /* JSONLocalUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0428909DB0003EA81B /* JSONLocalUserService.swift */; };
+		A08E9B0728909E1C003EA81B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0628909E1C003EA81B /* UserService.swift */; };
+		A08E9B092890A569003EA81B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B082890A569003EA81B /* AuthService.swift */; };
+		A08E9B0B2890A608003EA81B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0A2890A608003EA81B /* LoginService.swift */; };
 		A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */; };
 		A38D70BC28474017000F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70BB28474017000F908D /* AppDelegate.swift */; };
 		A38D70C52847401A000F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C42847401A000F908D /* Assets.xcassets */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A08E9B0128909A36003EA81B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A08E9B0428909DB0003EA81B /* JSONLocalUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLocalUserService.swift; sourceTree = "<group>"; };
+		A08E9B0628909E1C003EA81B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A08E9B082890A569003EA81B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A08E9B0A2890A608003EA81B /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetWebService.swift; sourceTree = "<group>"; };
 		A38D70B828474017000F908D /* Ratp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38D70BB28474017000F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A08E9B0028909A10003EA81B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9B0128909A36003EA81B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A08E9B0328909D6C003EA81B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9B0428909DB0003EA81B /* JSONLocalUserService.swift */,
+				A08E9B0628909E1C003EA81B /* UserService.swift */,
+				A08E9B082890A569003EA81B /* AuthService.swift */,
+				A08E9B0A2890A608003EA81B /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A38D70AF28474017000F908D = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +111,8 @@
 		A38D70BA28474017000F908D /* Ratp */ = {
 			isa = PBXGroup;
 			children = (
+				A08E9B0328909D6C003EA81B /* Services */,
+				A08E9B0028909A10003EA81B /* Models */,
 				A38D70E328475F99000F908D /* Controllers */,
 				A38D70DE28475B99000F908D /* Platforms */,
 				A38D70DA28475A2F000F908D /* Definitions */,
@@ -253,18 +284,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08E9B0B2890A608003EA81B /* LoginService.swift in Sources */,
+				A08E9B0228909A36003EA81B /* User.swift in Sources */,
 				A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */,
 				A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */,
 				A38D70D92847583B000F908D /* RatpMeta.swift in Sources */,
 				A38D70BC28474017000F908D /* AppDelegate.swift in Sources */,
 				A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */,
+				A08E9B0528909DB0003EA81B /* JSONLocalUserService.swift in Sources */,
 				A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */,
 				ECCFAC00289057AB009AC071 /* SignUpViewController.swift in Sources */,
 				A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */,
 				A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */,
+				A08E9B0728909E1C003EA81B /* UserService.swift in Sources */,
 				A38D70D12847421B000F908D /* HomeViewController.swift in Sources */,
 				A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */,
 				ECCFABFC2890579B009AC071 /* LoginViewController.swift in Sources */,
+				A08E9B092890A569003EA81B /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
