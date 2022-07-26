@@ -13,10 +13,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func handleFlights(_ sender: Any) {
-        
-    }
     
     @IBAction func handleLogin(_ sender: Any) {
         self.navigationController?.pushViewController(LoginViewController(), animated: true)

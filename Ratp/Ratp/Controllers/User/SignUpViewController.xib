@@ -11,16 +11,66 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Ratp" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="lwN-ql-ddQ" id="zkg-Ff-9fY"/>
+                <outlet property="passwordTextField" destination="hJa-Pc-s8k" id="8pG-tG-1Sw"/>
+                <outlet property="usernameTextField" destination="07T-dC-Jt3" id="bT4-zm-ZJT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="07T-dC-Jt3">
+                    <rect key="frame" x="0.0" y="95" width="414" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="lwN-ql-ddQ">
+                    <rect key="frame" x="0.0" y="160" width="414" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="hJa-Pc-s8k">
+                    <rect key="frame" x="0.0" y="230" width="414" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tjG-R6-vXN">
+                    <rect key="frame" x="0.0" y="299" width="414" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                    <connections>
+                        <action selector="registerUser:" destination="-1" eventType="touchUpInside" id="EQj-Rk-HNM"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="116"/>
+            <constraints>
+                <constraint firstItem="hJa-Pc-s8k" firstAttribute="top" secondItem="lwN-ql-ddQ" secondAttribute="bottom" id="3aD-bs-nwv"/>
+                <constraint firstItem="07T-dC-Jt3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="6WP-DE-dMg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hJa-Pc-s8k" secondAttribute="bottom" id="6hX-5o-zOf"/>
+                <constraint firstItem="07T-dC-Jt3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6v5-fr-GlT"/>
+                <constraint firstItem="lwN-ql-ddQ" firstAttribute="top" secondItem="07T-dC-Jt3" secondAttribute="bottom" constant="10" id="9IB-TS-gry"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hJa-Pc-s8k" secondAttribute="trailing" id="Bd0-9n-hqp"/>
+                <constraint firstItem="hJa-Pc-s8k" firstAttribute="top" secondItem="lwN-ql-ddQ" secondAttribute="bottom" constant="10" id="CZe-qA-uTF"/>
+                <constraint firstItem="hJa-Pc-s8k" firstAttribute="top" secondItem="lwN-ql-ddQ" secondAttribute="bottom" constant="10" id="Ezy-xY-1FU"/>
+                <constraint firstItem="07T-dC-Jt3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KUo-WQ-q3a"/>
+                <constraint firstItem="hJa-Pc-s8k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QMh-qj-L0r"/>
+                <constraint firstItem="lwN-ql-ddQ" firstAttribute="top" secondItem="07T-dC-Jt3" secondAttribute="bottom" id="Sbc-iQ-oAS"/>
+                <constraint firstItem="lwN-ql-ddQ" firstAttribute="top" secondItem="07T-dC-Jt3" secondAttribute="bottom" constant="10" id="aQM-40-xfG"/>
+                <constraint firstItem="07T-dC-Jt3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="f0s-zK-3lW"/>
+                <constraint firstItem="lwN-ql-ddQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kLc-cH-Scl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lwN-ql-ddQ" secondAttribute="trailing" id="rKV-1j-1EP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="07T-dC-Jt3" secondAttribute="trailing" id="uMD-CF-Ovd"/>
+            </constraints>
+            <point key="canvasLocation" x="121.73913043478262" y="116.51785714285714"/>
         </view>
     </objects>
     <resources>

@@ -8,14 +8,22 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    @IBOutlet var usernameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.navigationController?.navigationBar.isHidden = false
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func registerUser(_ sender: Any) {
+        print(usernameTextField.text as Any, emailTextField.text as Any, passwordTextField.text as Any)
+    }
+    
     /*
     // MARK: - Navigation
 
