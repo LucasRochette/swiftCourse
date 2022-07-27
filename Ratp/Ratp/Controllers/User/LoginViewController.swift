@@ -15,23 +15,30 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func handleLogin(_ sender: Any) {
         
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        guard let username = self.usernameTextField.text,
+                     let password = self.passwordTextfield.text else {
+                  return
+               }
+               guard username.count > 0 && password.count > 0 else {
+                   return
+               }
+               LoginService.shared.AuthLogin(username: username, password: password, completion: { bool in
+                   if bool == true {
+                       DispatchQueue.main.async {
+                           self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                       }
+                   } else {
+                       return
+                       }
+               })
+           }
 }
+    
+    
+
+

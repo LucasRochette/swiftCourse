@@ -52,13 +52,18 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = ""
-            value = ""
+            key = "WEATHER_API_KEY"
+            value = "6WYRFMZPR9NX356HNFZCSZM4Z"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "WEATHER_API_URL"
+            value = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "API_URL"
-            value = ""
+            value = "https://swift-amaurylucas.herokuapp.com"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

@@ -12,6 +12,11 @@
 		A08E9B0728909E1C003EA81B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0628909E1C003EA81B /* UserService.swift */; };
 		A08E9B092890A569003EA81B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B082890A569003EA81B /* AuthService.swift */; };
 		A08E9B0B2890A608003EA81B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0A2890A608003EA81B /* LoginService.swift */; };
+		A08E9B0F2890BFF7003EA81B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B0D2890BFF7003EA81B /* WeatherViewController.swift */; };
+		A08E9B102890BFF7003EA81B /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08E9B0E2890BFF7003EA81B /* WeatherViewController.xib */; };
+		A08E9B122890D1C5003EA81B /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B112890D1C5003EA81B /* WeatherDay.swift */; };
+		A08E9B172890D7D6003EA81B /* WeatherDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B152890D7D6003EA81B /* WeatherDayTableViewCell.swift */; };
+		A08E9B182890D7D6003EA81B /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08E9B162890D7D6003EA81B /* WeatherDayTableViewCell.xib */; };
 		A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */; };
 		A38D70BC28474017000F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70BB28474017000F908D /* AppDelegate.swift */; };
 		A38D70C52847401A000F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C42847401A000F908D /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		A08E9B0628909E1C003EA81B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A08E9B082890A569003EA81B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08E9B0A2890A608003EA81B /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A08E9B0D2890BFF7003EA81B /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		A08E9B0E2890BFF7003EA81B /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		A08E9B112890D1C5003EA81B /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
+		A08E9B152890D7D6003EA81B /* WeatherDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayTableViewCell.swift; sourceTree = "<group>"; };
+		A08E9B162890D7D6003EA81B /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
 		A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetWebService.swift; sourceTree = "<group>"; };
 		A38D70B828474017000F908D /* Ratp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38D70BB28474017000F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				A08E9B0128909A36003EA81B /* User.swift */,
+				A08E9B112890D1C5003EA81B /* WeatherDay.swift */,
+				A08E9B152890D7D6003EA81B /* WeatherDayTableViewCell.swift */,
+				A08E9B162890D7D6003EA81B /* WeatherDayTableViewCell.xib */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +103,15 @@
 				A08E9B0A2890A608003EA81B /* LoginService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A08E9B0C2890BFCF003EA81B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9B0D2890BFF7003EA81B /* WeatherViewController.swift */,
+				A08E9B0E2890BFF7003EA81B /* WeatherViewController.xib */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		A38D70AF28474017000F908D = {
@@ -179,6 +201,7 @@
 		A38D70E328475F99000F908D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A08E9B0C2890BFCF003EA81B /* Weather */,
 				ECCFABF92890575A009AC071 /* User */,
 				A38D70E428475FAA000F908D /* Datasets */,
 				A38D70CF2847421B000F908D /* HomeViewController.swift */,
@@ -267,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08E9B182890D7D6003EA81B /* WeatherDayTableViewCell.xib in Resources */,
 				A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */,
+				A08E9B102890BFF7003EA81B /* WeatherViewController.xib in Resources */,
 				A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */,
 				ECCFAC01289057AB009AC071 /* SignUpViewController.xib in Resources */,
 				ECCFABFD2890579B009AC071 /* LoginViewController.xib in Resources */,
@@ -285,9 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08E9B0B2890A608003EA81B /* LoginService.swift in Sources */,
+				A08E9B0F2890BFF7003EA81B /* WeatherViewController.swift in Sources */,
 				A08E9B0228909A36003EA81B /* User.swift in Sources */,
 				A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */,
 				A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */,
+				A08E9B172890D7D6003EA81B /* WeatherDayTableViewCell.swift in Sources */,
 				A38D70D92847583B000F908D /* RatpMeta.swift in Sources */,
 				A38D70BC28474017000F908D /* AppDelegate.swift in Sources */,
 				A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */,
@@ -297,6 +324,7 @@
 				A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */,
 				A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */,
 				A08E9B0728909E1C003EA81B /* UserService.swift in Sources */,
+				A08E9B122890D1C5003EA81B /* WeatherDay.swift in Sources */,
 				A38D70D12847421B000F908D /* HomeViewController.swift in Sources */,
 				A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */,
 				ECCFABFC2890579B009AC071 /* LoginViewController.swift in Sources */,
