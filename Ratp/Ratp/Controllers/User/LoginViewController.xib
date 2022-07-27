@@ -31,9 +31,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-Fs-LhK">
-                    <rect key="frame" x="178" y="192" width="60" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-Fs-LhK">
+                    <rect key="frame" x="0.0" y="192" width="414" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Login"/>
                     <connections>
@@ -45,9 +44,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="2Q0-2u-xVj" firstAttribute="top" secondItem="2Rm-a7-phe" secondAttribute="bottom" constant="20" id="4i2-Ww-zbL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N4x-Fs-LhK" secondAttribute="trailing" id="84H-QJ-tQD"/>
                 <constraint firstItem="2Rm-a7-phe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="DjP-GZ-CtX"/>
                 <constraint firstItem="2Q0-2u-xVj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mla-q7-K1Q"/>
+                <constraint firstItem="N4x-Fs-LhK" firstAttribute="top" secondItem="2Q0-2u-xVj" secondAttribute="bottom" constant="40" id="RJw-ec-5eT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Rm-a7-phe" secondAttribute="trailing" id="Sj4-oy-pML"/>
+                <constraint firstItem="N4x-Fs-LhK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UEI-TJ-rPi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Q0-2u-xVj" secondAttribute="trailing" id="awo-mh-Xkf"/>
                 <constraint firstItem="2Rm-a7-phe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="s05-MM-xNI"/>
             </constraints>

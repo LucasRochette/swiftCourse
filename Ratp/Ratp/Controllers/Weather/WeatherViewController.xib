@@ -21,15 +21,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lq9-br-UvN">
-                    <rect key="frame" x="74" y="91" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lq9-br-UvN">
+                    <rect key="frame" x="0.0" y="64" width="414" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-Vc-esj">
-                    <rect key="frame" x="88" y="156" width="69" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-Vc-esj">
+                    <rect key="frame" x="0.0" y="129" width="414" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Search"/>
                     <connections>
@@ -44,9 +42,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lq9-br-UvN" secondAttribute="trailing" id="0lK-oQ-5HH"/>
+                <constraint firstItem="lq9-br-UvN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1xe-W8-GIc"/>
                 <constraint firstItem="TF1-Ko-DzU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="363-jg-2HY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mAv-Vc-esj" secondAttribute="trailing" id="BQ3-L0-ewt"/>
+                <constraint firstItem="mAv-Vc-esj" firstAttribute="top" secondItem="lq9-br-UvN" secondAttribute="bottom" constant="31" id="EHk-JU-XVA"/>
                 <constraint firstItem="TF1-Ko-DzU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Xzj-EA-UVp"/>
+                <constraint firstItem="lq9-br-UvN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bEu-9B-Guc"/>
+                <constraint firstItem="TF1-Ko-DzU" firstAttribute="top" secondItem="mAv-Vc-esj" secondAttribute="bottom" constant="39" id="ccT-je-ig4"/>
                 <constraint firstItem="TF1-Ko-DzU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oMq-CJ-DgA"/>
+                <constraint firstItem="mAv-Vc-esj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wmO-5J-DQb"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
         </view>
