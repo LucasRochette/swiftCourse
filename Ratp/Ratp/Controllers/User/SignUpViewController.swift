@@ -1,9 +1,3 @@
-//
-//  SignUpViewController.swift
-//  Ratp
-//
-//  Created by Etudiant on 26/07/2022.
-//
 
 import UIKit
 

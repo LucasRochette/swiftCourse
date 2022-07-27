@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,25 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ratp-home" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-5h-dFp">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSx-dQ-GgC">
-                    <rect key="frame" x="157" y="775" width="100" height="37"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Chargement">
-                        <backgroundConfiguration key="background" cornerRadius="0.0">
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </backgroundConfiguration>
-                        <directionalEdgeInsets key="contentInsets" top="10" leading="10" bottom="10" trailing="10"/>
-                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="handleDatasets" destination="-1" eventType="touchUpInside" id="oM6-uG-DCZ"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOY-Ri-Qut">
-                    <rect key="frame" x="171" y="524" width="73" height="31"/>
+                    <rect key="frame" x="0.0" y="115" width="414" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Sign up"/>
                     <connections>
@@ -45,7 +28,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaJ-V9-Y5w">
-                    <rect key="frame" x="178" y="433" width="60" height="31"/>
+                    <rect key="frame" x="0.0" y="64" width="414" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Login"/>
                     <connections>
@@ -56,16 +39,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="pOY-Ri-Qut" firstAttribute="top" secondItem="NaJ-V9-Y5w" secondAttribute="bottom" constant="60" id="2ko-5q-ZMI"/>
-                <constraint firstAttribute="trailing" secondItem="hb1-5h-dFp" secondAttribute="trailing" id="8Uy-lF-Ll0"/>
-                <constraint firstItem="hb1-5h-dFp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F2i-O8-c57"/>
-                <constraint firstItem="hb1-5h-dFp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HuH-hk-tez"/>
-                <constraint firstItem="bSx-dQ-GgC" firstAttribute="top" secondItem="pOY-Ri-Qut" secondAttribute="bottom" constant="220" id="K3Q-6S-t3n"/>
-                <constraint firstItem="pOY-Ri-Qut" firstAttribute="leading" secondItem="bSx-dQ-GgC" secondAttribute="trailing" constant="-86" id="W0R-Td-vTJ"/>
-                <constraint firstItem="NaJ-V9-Y5w" firstAttribute="leading" secondItem="pOY-Ri-Qut" secondAttribute="trailing" constant="-66" id="aTf-64-Frz"/>
-                <constraint firstAttribute="bottom" secondItem="hb1-5h-dFp" secondAttribute="bottom" id="cmR-Ya-TaO"/>
-                <constraint firstItem="bSx-dQ-GgC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qW1-bC-hJw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bSx-dQ-GgC" secondAttribute="bottom" constant="50" id="rBu-b8-5SQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NaJ-V9-Y5w" secondAttribute="trailing" id="0rn-Sp-oVO"/>
+                <constraint firstItem="NaJ-V9-Y5w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Ie-w1-Ecc"/>
+                <constraint firstItem="NaJ-V9-Y5w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="QOu-kE-bg5"/>
+                <constraint firstItem="pOY-Ri-Qut" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y79-7i-15V"/>
+                <constraint firstItem="pOY-Ri-Qut" firstAttribute="top" secondItem="NaJ-V9-Y5w" secondAttribute="bottom" constant="20" id="ib0-Bd-aQ0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pOY-Ri-Qut" secondAttribute="trailing" id="luw-EK-w3H"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
         </view>
@@ -78,7 +57,6 @@
         </button>
     </objects>
     <resources>
-        <image name="ratp-home" width="1000" height="749"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

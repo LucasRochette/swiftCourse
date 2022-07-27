@@ -129,6 +129,7 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
             
         }
         self.tableView.reloadData()
+        print(self.datasets.count)
           weatherTask.resume()
         
     }

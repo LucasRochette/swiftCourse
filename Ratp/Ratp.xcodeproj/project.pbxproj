@@ -17,21 +17,11 @@
 		A08E9B122890D1C5003EA81B /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B112890D1C5003EA81B /* WeatherDay.swift */; };
 		A08E9B172890D7D6003EA81B /* WeatherDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E9B152890D7D6003EA81B /* WeatherDayTableViewCell.swift */; };
 		A08E9B182890D7D6003EA81B /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08E9B162890D7D6003EA81B /* WeatherDayTableViewCell.xib */; };
-		A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */; };
 		A38D70BC28474017000F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70BB28474017000F908D /* AppDelegate.swift */; };
 		A38D70C52847401A000F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C42847401A000F908D /* Assets.xcassets */; };
 		A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C62847401A000F908D /* LaunchScreen.storyboard */; };
 		A38D70D12847421B000F908D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70CF2847421B000F908D /* HomeViewController.swift */; };
 		A38D70D22847421B000F908D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70D02847421B000F908D /* HomeViewController.xib */; };
-		A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D428474C8C000F908D /* RatpDataset.swift */; };
-		A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D628474CF2000F908D /* RatpAttachment.swift */; };
-		A38D70D92847583B000F908D /* RatpMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D82847583B000F908D /* RatpMeta.swift */; };
-		A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70DC28475A87000F908D /* RatpDatasetService.swift */; };
-		A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70E128475C01000F908D /* RatpDatasetMockService.swift */; };
-		A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70E52847600F000F908D /* DatasetListViewController.swift */; };
-		A38D70E82847600F000F908D /* DatasetListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70E62847600F000F908D /* DatasetListViewController.xib */; };
-		A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */; };
-		A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */; };
 		ECCFABFC2890579B009AC071 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCFABFA2890579B009AC071 /* LoginViewController.swift */; };
 		ECCFABFD2890579B009AC071 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCFABFB2890579B009AC071 /* LoginViewController.xib */; };
 		ECCFAC00289057AB009AC071 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCFABFE289057AB009AC071 /* SignUpViewController.swift */; };
@@ -49,7 +39,6 @@
 		A08E9B112890D1C5003EA81B /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
 		A08E9B152890D7D6003EA81B /* WeatherDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayTableViewCell.swift; sourceTree = "<group>"; };
 		A08E9B162890D7D6003EA81B /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
-		A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetWebService.swift; sourceTree = "<group>"; };
 		A38D70B828474017000F908D /* Ratp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38D70BB28474017000F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A38D70C42847401A000F908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,15 +46,6 @@
 		A38D70C92847401A000F908D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A38D70CF2847421B000F908D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38D70D02847421B000F908D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		A38D70D428474C8C000F908D /* RatpDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDataset.swift; sourceTree = "<group>"; };
-		A38D70D628474CF2000F908D /* RatpAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpAttachment.swift; sourceTree = "<group>"; };
-		A38D70D82847583B000F908D /* RatpMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpMeta.swift; sourceTree = "<group>"; };
-		A38D70DC28475A87000F908D /* RatpDatasetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetService.swift; sourceTree = "<group>"; };
-		A38D70E128475C01000F908D /* RatpDatasetMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetMockService.swift; sourceTree = "<group>"; };
-		A38D70E52847600F000F908D /* DatasetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetListViewController.swift; sourceTree = "<group>"; };
-		A38D70E62847600F000F908D /* DatasetListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatasetListViewController.xib; sourceTree = "<group>"; };
-		A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetTableViewCell.swift; sourceTree = "<group>"; };
-		A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatasetTableViewCell.xib; sourceTree = "<group>"; };
 		ECCFABFA2890579B009AC071 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECCFABFB2890579B009AC071 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		ECCFABFE289057AB009AC071 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -136,8 +116,6 @@
 				A08E9B0328909D6C003EA81B /* Services */,
 				A08E9B0028909A10003EA81B /* Models */,
 				A38D70E328475F99000F908D /* Controllers */,
-				A38D70DE28475B99000F908D /* Platforms */,
-				A38D70DA28475A2F000F908D /* Definitions */,
 				A38D70BB28474017000F908D /* AppDelegate.swift */,
 				A38D70C42847401A000F908D /* Assets.xcassets */,
 				A38D70C62847401A000F908D /* LaunchScreen.storyboard */,
@@ -146,79 +124,15 @@
 			path = Ratp;
 			sourceTree = "<group>";
 		};
-		A38D70D328474C79000F908D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70D428474C8C000F908D /* RatpDataset.swift */,
-				A38D70D628474CF2000F908D /* RatpAttachment.swift */,
-				A38D70D82847583B000F908D /* RatpMeta.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A38D70DA28475A2F000F908D /* Definitions */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70DB28475A79000F908D /* Services */,
-				A38D70D328474C79000F908D /* Models */,
-			);
-			path = Definitions;
-			sourceTree = "<group>";
-		};
-		A38D70DB28475A79000F908D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70DC28475A87000F908D /* RatpDatasetService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		A38D70DE28475B99000F908D /* Platforms */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70E028475BA7000F908D /* Webservices */,
-				A38D70DF28475BA0000F908D /* Mocks */,
-			);
-			path = Platforms;
-			sourceTree = "<group>";
-		};
-		A38D70DF28475BA0000F908D /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70E128475C01000F908D /* RatpDatasetMockService.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		A38D70E028475BA7000F908D /* Webservices */ = {
-			isa = PBXGroup;
-			children = (
-				A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */,
-			);
-			path = Webservices;
-			sourceTree = "<group>";
-		};
 		A38D70E328475F99000F908D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				A08E9B0C2890BFCF003EA81B /* Weather */,
 				ECCFABF92890575A009AC071 /* User */,
-				A38D70E428475FAA000F908D /* Datasets */,
 				A38D70CF2847421B000F908D /* HomeViewController.swift */,
 				A38D70D02847421B000F908D /* HomeViewController.xib */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A38D70E428475FAA000F908D /* Datasets */ = {
-			isa = PBXGroup;
-			children = (
-				A38D70E52847600F000F908D /* DatasetListViewController.swift */,
-				A38D70E62847600F000F908D /* DatasetListViewController.xib */,
-				A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */,
-				A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */,
-			);
-			path = Datasets;
 			sourceTree = "<group>";
 		};
 		ECCFABF92890575A009AC071 /* User */ = {
@@ -291,14 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08E9B182890D7D6003EA81B /* WeatherDayTableViewCell.xib in Resources */,
-				A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */,
 				A08E9B102890BFF7003EA81B /* WeatherViewController.xib in Resources */,
 				A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */,
 				ECCFAC01289057AB009AC071 /* SignUpViewController.xib in Resources */,
 				ECCFABFD2890579B009AC071 /* LoginViewController.xib in Resources */,
 				A38D70C52847401A000F908D /* Assets.xcassets in Resources */,
 				A38D70D22847421B000F908D /* HomeViewController.xib in Resources */,
-				A38D70E82847600F000F908D /* DatasetListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,21 +224,13 @@
 				A08E9B0B2890A608003EA81B /* LoginService.swift in Sources */,
 				A08E9B0F2890BFF7003EA81B /* WeatherViewController.swift in Sources */,
 				A08E9B0228909A36003EA81B /* User.swift in Sources */,
-				A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */,
-				A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */,
 				A08E9B172890D7D6003EA81B /* WeatherDayTableViewCell.swift in Sources */,
-				A38D70D92847583B000F908D /* RatpMeta.swift in Sources */,
 				A38D70BC28474017000F908D /* AppDelegate.swift in Sources */,
-				A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */,
 				A08E9B0528909DB0003EA81B /* JSONLocalUserService.swift in Sources */,
-				A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */,
 				ECCFAC00289057AB009AC071 /* SignUpViewController.swift in Sources */,
-				A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */,
-				A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */,
 				A08E9B0728909E1C003EA81B /* UserService.swift in Sources */,
 				A08E9B122890D1C5003EA81B /* WeatherDay.swift in Sources */,
 				A38D70D12847421B000F908D /* HomeViewController.swift in Sources */,
-				A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */,
 				ECCFABFC2890579B009AC071 /* LoginViewController.swift in Sources */,
 				A08E9B092890A569003EA81B /* AuthService.swift in Sources */,
 			);

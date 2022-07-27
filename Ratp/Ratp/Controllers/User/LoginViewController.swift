@@ -1,9 +1,3 @@
-//
-//  LoginViewController.swift
-//  Ratp
-//
-//  Created by Etudiant on 26/07/2022.
-//
 
 import UIKit
 
@@ -30,7 +24,7 @@ class LoginViewController: UIViewController {
                LoginService.shared.AuthLogin(username: username, password: password, completion: { bool in
                    if bool == true {
                        DispatchQueue.main.async {
-                           self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                           self.navigationController?.pushViewController(WeatherViewController(), animated: true)
                        }
                    } else {
                        return
