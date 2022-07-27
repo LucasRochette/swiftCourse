@@ -10,22 +10,16 @@ import Foundation
 class LoginService : AuthService {
     
     public static let shared: AuthService = LoginService()
-    
+    public static let API_URL=ProcessInfo.processInfo.environment["API_URL"]
   
     
-    func AuthLogin(username: String, password: String, completion: (Bool) -> Void) {
+    func AuthLogin(username: String, password: String, completion: @escaping (Bool) -> Void) {
         
-        if let clientID = ProcessInfo.processInfo.
-            environment["API_URL"] {
-                        //
-        }
-        else{
+
             
-        }
-        let url = URL(string: "http://localhost:3000/api/auth/login") else {
-            completion(false)
-            return
-        }
+        let endpoint = LoginService.API_URL! + "/auth/login"
+        let url = URL(string: endpoint)!
+                
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -52,6 +46,10 @@ class LoginService : AuthService {
                 completion(false)
                 return
             }
+            
+            completion(true)
+
+            /*
             let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             let filePath = URL(fileURLWithPath: "token.txt", relativeTo: urls[0])
             print(filePath)
@@ -71,7 +69,7 @@ class LoginService : AuthService {
                 completion(true)
             } catch {
                 completion(false)
-            }
+            }*/
         }
         task.resume()
     }

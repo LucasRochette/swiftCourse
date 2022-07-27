@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Ratp" customModuleProvider="target">
             <connections>
+                <outlet property="handleLogin" destination="YSy-We-gXz" id="1q3-Vb-A89"/>
+                <outlet property="passwordTextfield" destination="2Q0-2u-xVj" id="Rdw-Yf-eH9"/>
+                <outlet property="usernameTextField" destination="2Rm-a7-phe" id="OQA-FO-Dec"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,6 +36,9 @@
                     <rect key="frame" x="0.0" y="172" width="414" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                    <connections>
+                        <action selector="handleLogin:" destination="-1" eventType="touchUpInside" id="IiZ-V6-Cof"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -9,6 +9,6 @@ import Foundation
 
 protocol AuthService {
     
-    func AuthLogin(username:String, password: String, completion:(Bool) -> Void)
+    func AuthLogin(username:String, password: String, completion: @escaping (Bool) -> Void)
 
 }
